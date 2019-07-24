@@ -14,6 +14,9 @@
 		E82260F822E3C352004D4DE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E82260F622E3C352004D4DE2 /* LaunchScreen.storyboard */; };
 		E822610322E3C352004D4DE2 /* GreenEyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E822610222E3C352004D4DE2 /* GreenEyeTests.swift */; };
 		E822610E22E3C352004D4DE2 /* GreenEyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E822610D22E3C352004D4DE2 /* GreenEyeUITests.swift */; };
+		E8BD9F2A22E659C0009DA4E3 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BD9F2922E659C0009DA4E3 /* HomePageViewController.swift */; };
+		E8E5C7FF22E4212D0013494B /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E5C7FE22E4212D0013494B /* SigninViewController.swift */; };
+		E8F9D9B822E58EF0008754BA /* RegisterUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F9D9B722E58EF0008754BA /* RegisterUserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		E822610922E3C352004D4DE2 /* GreenEyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreenEyeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E822610D22E3C352004D4DE2 /* GreenEyeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenEyeUITests.swift; sourceTree = "<group>"; };
 		E822610F22E3C352004D4DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8BD9F2922E659C0009DA4E3 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		E8E5C7FE22E4212D0013494B /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
+		E8F9D9B722E58EF0008754BA /* RegisterUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,9 @@
 				E82260F422E3C352004D4DE2 /* Assets.xcassets */,
 				E82260F622E3C352004D4DE2 /* LaunchScreen.storyboard */,
 				E82260F922E3C352004D4DE2 /* Info.plist */,
+				E8E5C7FE22E4212D0013494B /* SigninViewController.swift */,
+				E8F9D9B722E58EF0008754BA /* RegisterUserViewController.swift */,
+				E8BD9F2922E659C0009DA4E3 /* HomePageViewController.swift */,
 			);
 			path = GreenEye;
 			sourceTree = "<group>";
@@ -256,7 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8F9D9B822E58EF0008754BA /* RegisterUserViewController.swift in Sources */,
+				E8E5C7FF22E4212D0013494B /* SigninViewController.swift in Sources */,
 				E82260F022E3C351004D4DE2 /* ViewController.swift in Sources */,
+				E8BD9F2A22E659C0009DA4E3 /* HomePageViewController.swift in Sources */,
 				E82260EE22E3C351004D4DE2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
