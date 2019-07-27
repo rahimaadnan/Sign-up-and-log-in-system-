@@ -25,13 +25,14 @@ class SigninViewController: UIViewController {
     }
     /// error here
     }
-    
+
 func registerNewAccountButtonTapped(_ sender: Any) {
     print("Register new account button tapped")
     
     let registerViewController =
-        self.storyboard?.instantiateViewController(withIdentifier: "RegisterUserViewController")
-    as! RegisterUserViewController
+        self.storyboard?.instantiateViewController(withIdentifier:
+            "RegisterUserViewController"
+                as! RegisterUserViewController,
     
     self.present(registerViewController, animated: true)
     
@@ -41,8 +42,7 @@ func registerNewAccountButtonTapped(_ sender: Any) {
         
         
         
-        
-        
+       // RegisterUserViewController
     
     }
     
@@ -57,4 +57,4 @@ func registerNewAccountButtonTapped(_ sender: Any) {
     }
     */
 
-}
+
