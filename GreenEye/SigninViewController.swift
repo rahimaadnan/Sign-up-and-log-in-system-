@@ -26,7 +26,7 @@ class SigninViewController: UIViewController {
     /// error here
     }
 
-func registerNewAccountButtonTapped(_ sender: Any) {
+@IBAction func registerNewAccountButtonTapped(_ sender: Any) {
     print("Register new account button tapped")
     
     let registerViewController =
