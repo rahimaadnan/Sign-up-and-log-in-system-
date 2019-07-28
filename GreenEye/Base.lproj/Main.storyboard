@@ -61,6 +61,7 @@
                                 <state key="normal" title="Register new account"/>
                                 <connections>
                                     <action selector="registerNewAccountButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EO1-O8-f9t"/>
+                                    <action selector="registerNewButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Dq-mO-WG1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ud-1K-33l">

@@ -24,37 +24,19 @@ class SigninViewController: UIViewController {
     @IBAction func signInButtonTapped(_ sender: Any) {
     }
     /// error here
+    
+    @IBAction func registerNewButtonTapped(_ sender: Any) {
+        print("Register account button tapped")
+        let registerViewController =
+        self.storyboard?.instantiateViewController(withIdentifier: "RegisterUserViewController")as!RegisterUserViewController
+        self.present(registerViewController, animated: true)
     }
 
-@IBAction func registerNewAccountButtonTapped(_ sender: Any) {
-    print("Register new account button tapped")
-    
-    let registerViewController =
-        self.storyboard?.instantiateViewController(withIdentifier:
-            "RegisterUserViewController"
-                as! RegisterUserViewController,
-    
-    self.present(registerViewController, animated: true)
-    
-   /// let registerViewController = self.storyboard?.instantiateViewController(withIdentifier:"RegisterUserViewController") as! RegisterUserViewController
-        
- ///   self.present(RegisterUserViewController, animated: true)
-        
-        
-        
-       // RegisterUserViewController
-    
-    }
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 
+
+
+
+
+
+}
