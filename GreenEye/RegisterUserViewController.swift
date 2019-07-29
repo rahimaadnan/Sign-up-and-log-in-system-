@@ -28,17 +28,49 @@ class RegisterUserViewController: UIViewController {
     }
     
     @IBAction func signUpButtonTapped(_ sender: Any) {
+        if (firstNameTextField.text?.isEmpty)! ||
+        (lastNameTextField.text?.isEmpty)! ||
+        (emailAdressTextField.text?.isEmpty)! ||
+        (passwordTextField.text?.isEmpty)!
+        {
+            displayMessage(userMessage: "All fields are required to fill in")
+            return
+    }
+
+    if ((passwordTextField.text?.elementsEqual(repeatPasswordTextField.text!)) != true)
+    {
+        displayMessage(userMessage: "Please make sure that passwords match")
+        return
+        }
+        //Create Activty Indicator
+        let myActivtyIndicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.gray)
+        // Postion Activitiy Indicator in the center of the main view
+        myActivtyIndicator.center = view.center
+        // if needed you can prevent Activty Indicator from hiding when stopAnimating() is called
+        myActivtyIndicator.hidesWhenStopped = false
+        
+    myActivtyIndicator.startAnimating()
+        view.addSubview(myActivtyIndicator)
+        
+      //  *stopped here* let myUrl = URL(string: )
+        
+}
+    func displayMessage(userMessage:String) -> Void {
+        DispatchQueue.main.async {
+            let alertController = UIAlertController(title: "Alert", message: userMessage, preferredStyle:.alert)
+            
+            let OKAction = UIAlertAction(title: "OK",style: .default) { (action:UIAlertAction!) in}
+            /// Code in this block will trigger when OK button is tapped.
+            print("Ok button tapped")
+            DispatchQueue.main.async
+                {
+                    self.dismiss(animated: true, completion: nil )
+            }
+        }
+        alertController.addAction(OKAction)
+        self.present(alertController, animated: true,
+        completion:nil)
         
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
